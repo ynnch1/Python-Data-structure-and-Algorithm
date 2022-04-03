@@ -1,4 +1,3 @@
-# create new node class to define node
 class Node:
     def __init__(self, data):
         self.data = data
@@ -39,10 +38,32 @@ class LinkedList:
             temp = temp.next
 #code execution
 if __name__ == '__main__':
-    llist = LinkedList()
-    llist.append(6)
-    llist.push(7)
-    llist.push(1)
-    llist.insertAfter(llist.head.next, 8)
+    llist1 = LinkedList()
+    llist2 = LinkedList()
 
-    llist.printList()
+
+    # 1
+    print("1. create new linked list")
+    # your code here and bellow
+    llist1.append(5)
+    llist1.push(4)
+    llist1.push(8)
+    llist1.push(9)
+
+    llist1.printList() # print out the #1 expect output
+    
+    # 2
+    print("\n2. insert node to the existing linked list")
+    # your code here and bellow
+    llist2.append(5)
+    llist2.push(4)
+    llist2.push(8)
+    llist2.push(9)
+    llist2.insertAfter(llist2.head.next, 7)
+    llist2.push(8)
+    llist2.insertAfter(llist2.head.next, 10)
+
+
+
+
+    llist2.printList() # print out the #2 expect output
